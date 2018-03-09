@@ -3,6 +3,6 @@ build:
 	hugo
 
 deploy: build
-	aws s3 sync public/ s3://www.oddenmath.com --acl public-read --delete
+	aws s3 sync public/ s3://oddenmath.com --acl public-read --delete
 	aws configure set preview.cloudfront true
 	aws cloudfront create-invalidation --distribution-id E1Z6A8K5R2OO8H --paths '/*'
