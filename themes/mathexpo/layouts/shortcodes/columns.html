@@ -1,0 +1,15 @@
+{{ $num := .Get 0}}
+
+{{ if eq $num "3"}}
+
+<div class="threecolumn">
+{{ .Inner }}
+</div>
+
+{{ else if eq $num "2" }}
+
+<div class="twocolumn">
+{{ .Inner }}
+</div>
+
+{{ end }}

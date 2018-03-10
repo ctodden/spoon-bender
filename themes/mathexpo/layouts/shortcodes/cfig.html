@@ -1,0 +1,13 @@
+{{ if .IsNamedParams }}
+
+<div class="centering">
+<img src="{{.Get "src" }}" width="{{.Get "width" }}" alt="">
+</div>
+
+{{ else }}
+
+<div class="centering">
+<img src="{{.Get 0}}" width="{{.Get 1 }}" alt="">
+</div>
+
+{{ end }}

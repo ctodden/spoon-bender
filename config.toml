@@ -1,23 +1,23 @@
 baseurl = "https://www.oddenmath.com/"
 languageCode = "en-us"
-title = "A static site test drive"
+title = "The Calculus Playlist"
 # Define how many pages appear per site
 paginate = 10
 # Enable comments powered by Disqus by entering your disqus shortname
 # disqusShortname = "spf13"
 # Enable gogle analytics by entering your tracking code
 googleAnalytics = ""
-theme = "hugo-minimalist-theme"
+theme = "mathexpo"
 
 
 [params]
-    site_author = "John Doe"
-    site_description = "The awesome blog of John Doe."
-    location = "Earth"
+    site_author = "Chris Odden"
+    site_description = "A site devoted to teaching calculus."
+    location = "Andover, Massachusetts"
     # Link custom assets relative to /static
-    avatar = "img/hugo-logo.png"
-    header_background = "img/coffee.jpg"
-    header_title = "Static site test drive"
+    avatar = "img/cto_picture.jpg"
+    header_background = "img/chalkboard.jpeg"
+    header_title = "The Calculus Playlist"
     copyright = "Powered by [Hugo](http://gohugo.io)."
     custom_css = []
     custom_js  = []

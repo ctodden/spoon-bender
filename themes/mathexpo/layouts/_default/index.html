@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>The Calculus Playlist</title>
+	    <link rel="stylesheet" href="{{ "fonts/stylesheet.css" | absURL }}">
+		<style type="text/css">
+			body {
+				background-image: url(img/background.png);
+				background-position: center top;
+				background-repeat: repeat-x;
+			}
+
+			h1 { 
+				color: white;
+				font-weight: bold;
+				font-family: 'Computer Modern Concrete'; 
+				font-size: 96px;
+				margin-top: 2ex;
+				margin-bottom: 3ex;
+				line-height: 1.2;
+			}
+
+			p {
+				font-family: 'Georgia', serif; 
+				font-size: 24px; 
+				line-height: 32px;
+				background-color: white;
+				padding: 36px;
+				box-shadow: 
+			}
+
+			div.content { 
+				position: relative; 
+				margin-left: auto; 
+				margin-right: auto;
+				width: 800px;
+				box-shadow: 10px 10px 5px #888;
+			}
+		</style>
+		<script src="https://code.jquery.com/jquery-3.2.0.min.js"
+  			integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+  			crossorigin="anonymous"></script>
+  		<script type="text/x-mathjax-config">
+	  		MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, 
+          "HTML-CSS": {fonts: ["Latin-Modern"]}
+        });
+		</script>
+		<script type="text/javascript"
+	  		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js">
+		</script>
+		<script type="text/javascript" src="scripts/playlisttools.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			  createVidToggle();
+			  hidePDFContainer();
+			  createPDFToggle();
+			});
+		</script>
+	</head>
+<body>
+
+<article>
+
+<h1 align="center">The Calculus Playlist</h1>
+
+<div class="content">
+
+<p>Welcome to <em>The Calculus Playlist</em>, a companion site to the collection of <a href="https://www.youtube.com/playlist?list=PL5eC9C1eRG64Lluy2fzDQoDGZ4pEu7Bcm">calculus videos</a> I maintain on YouTube. The goal of this site is to offer calculus instruction to the public in the form of videos, articles, and exercises.
+
+<br><br>
+
+<a href="/about_me/">About me.</a>
+</p>
+
+
+</div>
+
+</article>
+</body>
+</html>

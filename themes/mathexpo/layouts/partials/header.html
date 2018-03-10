@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>{{.Title}}</title>
+	    <link rel="stylesheet" href="{{ "fonts/stylesheet.css" | absURL }}">
+		<link rel="stylesheet" href="{{ "css/mathstyle.css" | absURL }}">
+		<script src="https://code.jquery.com/jquery-3.2.0.min.js"
+  			integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+  			crossorigin="anonymous"></script>
+  		<script type="text/x-mathjax-config">
+	  		MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}, 
+          "HTML-CSS": {fonts: ["Latin-Modern"]}
+        });
+		</script>
+		<script type="text/javascript"
+	  		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_SVG.js">
+		</script>
+		<script type="text/javascript" src="scripts/playlisttools.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			  createVidToggle();
+			  hidePDFContainer();
+			  createPDFToggle();
+			});
+		</script>
+	</head>
+<body>
+
+

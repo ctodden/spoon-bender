@@ -1,0 +1,308 @@
+/* CSS for mathematical exposition */
+
+/* Layout */
+
+#page { max-width: 1200px; margin: 0 auto; position: relative;}
+
+div.content { 
+	position: relative; 
+	margin-left: 20px; 
+	width: 60%;}
+
+.sidenote {
+	font-family: 'Computer Modern Bright'; 
+	font-size: 14px; 
+	line-height: 18px;
+	margin-right: -330px;
+	position: absolute;
+	right: 0;
+	top: auto; /* default */
+	width: 300px;
+}
+
+.twocolumn {
+	column-count: 2; 
+	-moz-column-count: 2;
+    -webkit-column-count: 2;
+
+}
+
+div.twocolumn > div.line {
+	break-after: column;
+}
+
+.threecolumn {
+	column-count: 3; 
+	-moz-column-count: 3;
+    -webkit-column-count: 3;
+}
+
+div.threecolumn > div.line {
+	break-after: column;
+}
+
+.textsf {
+	font-family: 'Computer Modern Bright'; 
+}
+
+.texttt {
+	font-family: 'Computer Modern Typewriter'; 
+}
+
+figure {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+div.narration {
+	padding-left: 20px;
+}
+
+/* Text */
+
+h1, h2, h3, h4 { 
+	color: rgb(3,101,192);
+	font-weight: bold;
+}
+
+h1 { 
+	font-family: 'Computer Modern Concrete'; 
+	text-shadow: 2px 2px #bbb;
+	font-size: 48px;
+	margin-top: 3ex;
+	margin-bottom: 3ex;
+	line-height: 1.2;
+}
+
+h2, h3, h4 {
+	font-family: "Computer Modern Bright", Arial; 
+	margin-bottom: -4px;	
+	margin-top: 4ex;
+}
+
+body { 
+	font-family: 'Georgia', serif; 
+	font-size: 16px; 
+	line-height: 24px;
+	color: black; 
+	padding: 0; 
+	margin: 0;
+}
+
+figcaption {
+	font-family: "Computer Modern Bright";
+}
+
+.inlinehead {
+	font-family: "Computer Modern Bright";
+	font-weight: bold;
+}
+
+input[type=button].pdf_toggle {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+/* LaTeX-like horizontal spacing */
+
+span.enskip {
+	display: inline-block;
+	width: 0.5em;
+}
+
+span.quad {
+	display: inline-block;
+	width: 1em;
+}
+
+span.qquad {
+	display: inline-block;
+	width: 2em;
+}
+
+div.centering {
+	text-align: center;
+}
+
+/* Display Box */
+
+div.displaybox {
+	margin-left: 0px; margin-right: 0px;
+	padding: 0px 10px;
+	border: 2px solid rgb(3,101,192);
+}
+
+div.displaybox h2 {
+	margin-bottom: 0px;
+	margin-top: .5em
+}
+
+div.displaybox p:first-of-type {
+	margin-top: 0.5em;
+}
+
+div.displaybox p:last-of-type {
+	margin-bottom: 0.5em;
+}
+
+/* Exercise formatting */
+
+section.problem {
+	margin-bottom: 2ex;
+	width: 100%;
+}
+
+div.problem_environment {
+	counter-reset: problemnumber;
+}
+
+section.problem {
+	display: table;
+	counter-reset: partnumber;
+}
+
+div.line {
+	display: table;
+	width: 100%;
+	margin-bottom: 1ex;
+}
+
+div.problem, div.part {
+	display: table-row;
+	width: 100%;
+}
+
+div.problem_label, div.part_label, div.buffer, div.item_content {
+	display: table-cell;
+}
+
+div.item_continued {
+	margin-left: 25px;
+}
+
+div.problem_label, div.part_label, div.short_part_label {
+	font-family: "Computer Modern Bright", "Arial";
+	font-weight: bold;
+	text-align: right;
+}
+
+div.problem_label { width: 25px; }
+
+div.problem_label span::before {
+	content: counter(problemnumber);
+	counter-increment: problemnumber;
+}
+
+div.problem_label span::after {
+	content: "."
+}
+
+div.part_label { width: 50px; }
+
+div.short_part_label { width: 25px; }
+
+div.part_label span::before {
+	content: counter(partnumber, lower-alpha);
+	counter-increment: partnumber;
+}
+
+div.short_part_label span::before {
+	content: counter(partnumber, lower-alpha);
+	counter-increment: partnumber;
+}
+
+div.part_label span::after {
+	content: ")"
+}
+
+div.short_part_label span::after {
+	content: ")"
+}
+div.buffer {
+	width: 8px;
+}
+
+/* Video wrappers */
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+.sidenote {
+	margin-right: -230px;
+	width: 200px;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+div.content { 
+	position: relative; 
+	margin-left: 15px; 
+	margin-right: 15px;
+	width: auto;
+}
+
+body { 
+	font-family: 'Georgia', serif; 
+	font-size: 14px; 
+	line-height: 21px;
+}
+
+figure {
+	border: 1px solid #ddd;
+}
+
+.sidenote {
+	padding: 5px;
+	border: 1px solid #ddd;
+	position: relative;
+	display: block;
+	margin: 5px;
+	margin-right: 0px;
+	float: right;
+	width: 200px;
+}
+
+h1, h2, h3, h4 { 
+	font-family: "Arial Narrow", sans-serif; 
+	color: rgb(3,101,192);
+}
+}
+
+@media screen and (max-width: 300px) {
+
+.sidenote {
+	float: none;
+	padding: 10px;
+	border: 1px solid #eee;
+	position: relative;
+	display: block;
+	margin: 5px 0px;
+	width: auto;
+}
+}
+
+
+
+
+
+
+
