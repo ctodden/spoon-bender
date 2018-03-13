@@ -7,15 +7,18 @@ date: 2018-03-10T10:06:25-05:00
 
 # Integration by parts
 
+{{% mtube id="aMKajIwy7Mo" %}}
+
+<br><br>
 
 ## Running the product rule in reverse
 
 The Product Rule for derivatives asserts that if the function $f$ and $g$ are both differentiable then 
-$$\tfrac{d}{dx}\!\big[\, f(x)\cdot g(x) \,\big] = f(x)\cdot g'(x) + g(x) \cdot f'(x)$$ 
+$$\tfrac{d}{dx}\\!\big[\, f(x)\cdot g(x) \,\big] = f(x)\cdot g'(x) + g(x) \cdot f'(x)$$ 
 Although this law is not outrageously complicated, it has enough moving parts to make it difficult to find anti-derivatives of products of functions. Fortunately there is a powerful technique, called ***integration by parts***, that often provides a way to run the product rule in reverse.
 
 To motivate this new technique we rewrite the equation above as 
-$$f(x)\cdot g'(x) = \tfrac{d}{dx}\\!\big[\, f(x)\cdot g(x) \,\big] - g(x) \cdot f'(x)$$
+$$f(x)\cdot g'(x) = \tfrac{d}{dx}\\\!\big[\, f(x)\cdot g(x) \,\big] - g(x) \cdot f'(x)$$
 and then take the anti-derivative of both sides. Putting aside
 <span class="sidenote">Indeed, throughout the rest of this article we shall tend to ignore the constant of integration until the very moment we are ready to write down the general anti-derivative.</span> 
 for the moment the ubiquitous constant of integration, and noting that the anti-derivative of the derivative of a function returns that function, we see that 
@@ -38,8 +41,8 @@ But we know the anti-derivative of $\sin x$, so we are done:
 $$\begin{align} \int x \cos x\, dx &= x\sin x - \int \sin x \, dx\\\\[6pt] 
 &= x\sin x + \cos x + C \end{align}$$ 
 Let's verify this is truly the anti-derivative: 
-$$\begin{align} \tfrac{d}{dx}\\!\big[ \, x\sin x + \cos x \,\big] 
-& = \tfrac{d}{dx}\\!\big[ \, x\sin x \,\big] \ +\ \tfrac{d}{dx}\\!\big[ \, \cos x \,\big]\\\\[6pt] 
+$$\begin{align} \tfrac{d}{dx}\\\!\big[ \, x\sin x + \cos x \,\big] 
+& = \tfrac{d}{dx}\\\!\big[ \, x\sin x \,\big] \ +\ \tfrac{d}{dx}\\\!\big[ \, \cos x \,\big]\\\\[6pt] 
 &= x\cos x + \sin x \ -\ \sin x \\\\[6pt]
 & = \cos x\quad \checkmark\end{align}$$
 
@@ -114,40 +117,40 @@ There is more than one way to assign “parts”, so let us explore the conseque
 </table>
 
 
-<span class="inlinehead">Option 1:</span> &nbsp;&nbsp; $u = 1$ &nbsp;&nbsp; and &nbsp;&nbsp; $dv = xe^{3x}\, dx$
+{{% inhead %}}Option 1:{{% /inhead %}}{{< quad >}}$u = 1${{< quad >}}and{{< quad >}}$dv = xe^{3x}\, dx$
 
-<div class="narration"> 
+{{% narration %}} 
 
 One of our first steps down this route would be to find the anti-differential of $dv = xe^{3x}\, dx$ --- which amounts to solving the original problem!
 
-<span class="inlinehead">Moral:</span> Don't let $dv$ bear the burden of the entire integral. This road leads to nowhere in a hurry.
+{{% inhead %}}Moral:{{% /inhead %}}{{< quad >}}Don't let $dv$ bear the burden of the entire integral. This road leads to nowhere in a hurry.
 
-</div> 
+{{% /narration %}}
 
-<span class="inlinehead">Option 2:</span> &nbsp;&nbsp;  $u=xe^{3x}$ &nbsp;&nbsp; and &nbsp;&nbsp; $dv = dx$
+{{% inhead %}}Option 2:{{% /inhead %}}{{< quad >}}$u=xe^{3x}${{< quad >}}and{{< quad >}}$dv = dx$ 
 
-<div class="narration"> 
+{{% narration %}} 
 
 We calculate 
 $$du = \big(\, e^{3x} + 3xe^{3x} \,\big) dx = (1+3x)e^{3x} \, dx$$ 
 and 
 $$v = x$$ 
 The integration by parts formula yields 
-$$\begin{align*} \int x e^{3x} \, dx &amp; = x^2 e^{3x} - \int (x+3x^2)e^{3x}\, dx\\[6pt] &amp; = x^2 e^{3x} - \int xe^{3x}\, dx - 3\!\int x^2 e^{3x}\, dx \end{align*}$$
+$$\begin{align} \int x e^{3x} \, dx & = x^2 e^{3x} - \int (x+3x^2)e^{3x}\, dx\\\\[6pt] & = x^2 e^{3x} - \int xe^{3x}\, dx - 3\\!\int x^2 e^{3x}\, dx \end{align}$$
 
 This looks very messy, but let's not give up hope quite yet. We see the original integral pop on the right side of the equation &ndash; but fortunately, it has a minus sign in front of it so we can add that quantity to both sides to obtain 
-$$2\!\int x e^{3x} \, dx \ =\ x^2 e^{3x} - 3\!\int x^2 e^{3x}\, dx$$ 
+$$2\\!\int x e^{3x} \, dx \ =\ x^2 e^{3x} - 3\\!\int x^2 e^{3x}\, dx$$ 
 and, dividing by two, 
-$$\int x e^{3x} \, dx \ =\ \tfrac 12 x^2 e^{3x} - \tfrac 32\!\int x^2 e^{3x}\, dx$$ 
+$$\int x e^{3x} \, dx \ =\ \tfrac 12 x^2 e^{3x} - \tfrac 32\\!\int x^2 e^{3x}\, dx$$ 
 But now we face the reality that the integral on the right-hand side of this equation is more complicated than the original integral. Our choice of parts has led us to what seems to be a more difficult problem.
 
-<span class="inlinehead">Moral:</span> &nbsp;&nbsp; If the original integrand is already pretty complicated, letting $u$ be the whole integrand might not work out that well, for $du$ is likely to be even <em>more</em> complicated.
+{{% inhead %}}Moral:{{% /inhead %}}{{< quad >}}If the original integrand is already pretty complicated, letting $u$ be the whole integrand might not work out that well, for $du$ is likely to be even _more_ complicated.
 
-</div> 
+{{% /narration %}}
 
-<span class="inlinehead">Option 3:</span> &nbsp;&nbsp; $u = e^{3x}$ &nbsp;&nbsp; and &nbsp;&nbsp; $dv = x\, dx$
+{{% inhead %}}Option 3:{{% /inhead %}}{{< quad >}}$u = e^{3x}${{< quad >}}and{{< quad >}}$dv = x\, dx$
 
-<div class="narration">
+{{% narration %}}
 
 In this case we calculate
 $$du = 3e^{3x}\, dx$ \qquad\qquad \text{and} \qquad\qquad v = \frac 12 x^2$$
@@ -155,29 +158,30 @@ and the integration by parts formula yields
 $$\int x e^{3x} \, dx = \tfrac 12x^2 e^{3x} - \tfrac 12\int x^2 e^{3x}\, dx$$ 
 But we are left stranded in a similar position as in Option 2, for we face an integal that seems even more difficult than the original. What happened here is that by choosing $dv$ to include the &ldquo;polynomial part&rdquo;, we guaranteed that $v$ would be a polynomial with a higher degree, thereby generating a more complicated integrand.
 
-<span class="inlinehead">Moral:</span> In general, you might consider trying to avoid setting $dv$ equal to the &ldquo;polynomial part&rdquo; of an integrand.
+{{% inhead %}}Moral:{{% /inhead %}}{{< quad >}}In general, you might consider trying to avoid setting $dv$ equal to the &ldquo;polynomial part&rdquo; of an integrand.
 &nbsp;
 
-</div>
+{{% /narration %}}
 
-<span class="inlinehead">Option 4:</span> &nbsp;&nbsp; $u = x$ &nbsp;&nbsp; and &nbsp;&nbsp; $dv = e^{3x}\, dx$
+{{% inhead %}}Option 4:{{% /inhead %}}{{< quad >}}$u = x${{< quad >}}and{{< quad >}}$dv = e^{3x}\, dx$
 
-<div class="narration">
+{{% narration %}}
 
 This choice of parts leads to
+$$du = dx\qquad\text{and}\qquad v = \frac 13 e^{3x}$$
+and the parts formula yields 
+$$\int x e^{3x} \, dx = \tfrac 13 xe^{3x} - \tfrac 13\int e^{3x}\, dx$$ 
+This looks very promising, for the integral on the right-hand side is quite simple. We conclude that 
+$$\int x e^{3x} \, dx = \tfrac 13 xe^{3x} - \tfrac 19 e^{3x} + C$$
 
-<p style="text-align: center;">$du = dx$ &nbsp;&nbsp;&nbsp; and &nbsp;&nbsp;&nbsp; $v = \frac 13 e^{3x}$
+{{% inhead %}}Moral:{{% /inhead %}}{{< quad >}}In general, you might consider setting $dv$ equal to the most &ldquo;impressive&rdquo; part you know how to integrate. This might increase the likelihood that $v$ will be simpler. (By the way, if you don't believe integrating a polynomial is all that impressive, this suggestion is consistent with the Moral of Option 3.)
 
-and the parts formula yields $$\int x e^{3x} \, dx = \tfrac 13 xe^{3x} - \tfrac 13\int e^{3x}\, dx$$ This looks very promising, for the integral on the right-hand side is quite simple. We conclude that $$\int x e^{3x} \, dx = \tfrac 13 xe^{3x} - \tfrac 19 e^{3x} + C$$
-
-<span class="inlinehead">Moral:</span> In general, you might consider setting $dv$ equal to the most &ldquo;impressive&rdquo; part you know how to integrate. This might increase the likelihood that $v$ will be simpler. (By the way, if you don't believe integrating a polynomial is all that impressive, this suggestion is consistent with the Moral of Option 3.)
-
-</div>
+{{% /narration %}}
 
 ## Definite integration using integration by parts
 
 Let's figure out how to apply the technique of integration by parts to a <em>definite integral</em>. We start back at the product rule for derivatives. 
-$$\tfrac{d}{dx}\!\big[\, f(x)\cdot g(x) \,\big] = f(x)\cdot g'(x) + g(x) \cdot f'(x)$$ 
+$$\tfrac{d}{dx}\\!\big[\, f(x)\cdot g(x) \,\big] = f(x)\cdot g'(x) + g(x) \cdot f'(x)$$ 
 Although it is not a <em>deep</em> observation, we notice that were we to take the <em>anti-derivative</em> of both sides we would arrive at the equation 
 $$f(x)g(x) = \int \big(\ f(x)\cdot g'(x) + g(x)\cdot f'(x) \ \big)\, dx$$ 
 which is simply telling us that the anti-derivative of $fg' + gf'$ is the function $fg$. The Evaluation Theorem allows us to find the value of a definite integral: 
