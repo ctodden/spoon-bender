@@ -186,7 +186,7 @@ $$\lim\_{x\to 0}\big( f(x) + g(x) \big)$$
 has the form &ldquo;$\infty + (- \infty)$&rdquo;. The sum function has the formula 
 $$f(x) + g(x) = \left(\frac 1{x^2} + x + 3\right) + \left( -\frac 1{x^2} \right)$$
 You are probably itching to make an obvious algebraic simplification to this formula, but let us pause to think about the domain of this function for a moment.  
-{{% sidenote %}}By definition, the domain of the sum of two functions is the intersection of the domains of the individual functions. This guarantees that you are able to evaluate an argument for _each_ function and _then_ add the values together.} 
+{{% sidenote %}}By definition, the domain of the sum of two functions is the intersection of the domains of the individual functions. This guarantees that you are able to evaluate an argument for _each_ function and _then_ add the values together.{{% /sidenote %}} 
 The functions $f$ and $g$ both have the domain $\mathbb R - \{0\}$, the set of all real numbers besides $0$. It follows that the sum function $f+g$ has the same domain. We must remember this when we perform the obvious algebraic simplification:
 \begin{align}\require{cancel}
 f(x) + g(x) & = \cancel{\frac 1{x^2}} + x + 3 + \left( -\cancel{\frac 1{x^2}} \right)\newline
@@ -195,7 +195,7 @@ f(x) + g(x) & = \cancel{\frac 1{x^2}} + x + 3 + \left( -\cancel{\frac 1{x^2}} \r
 Notice that we have inserted a domain restriction ($x\neq 0$) that is not otherwise obvious if we simply wrote $S(x) = x+3$. This implies that the graph of $f+g$ is precisely the line $y=x+3$ with a &ldquo;hole&rdquo; removed at the point $(0,3)$.
 
 
-{{< cfig title="/img/infinite-limit-laws/inf_minus_inf_equals_3.png" width="80%">}}
+{{< cfig src="/img/infinite-limit-laws/inf_minus_inf_equals_3.png" width="80%">}}
 
 Once again setting aside the details, this <span class="texttt">desmos</span> graph inspires us to assert that 
 $$\lim\_{x\to 0} \big( f(x) + g(x) \big) = 3$$
@@ -321,6 +321,8 @@ $$\lim\_{x\to a} f(x) = -\infty
 then it follows that 
 $$\lim\_{x\to a}\big(f(x)\cdot g(x)\big) = -\infty$$
 {{% /dbox %}}
+
+<br>
 
 {{% inhead %}}Example F: A product of two infinite limits{{% /inhead %}}
 
