@@ -1,13 +1,15 @@
 {{ if .IsNamedParams }}
 
-<div class="centering">
+<div class="centering"><figure>
 <img src="{{.Get "src" }}" width="{{.Get "width" }}" alt="">
-</div>
+<figcaption>{{.Get "caption" }}</figcaption>
+</figure></div>
 
 {{ else }}
 
-<div class="centering">
+<div class="centering"><figure>
 <img src="{{.Get 0}}" width="{{.Get 1 }}" alt="">
-</div>
+</figure></div>
 
 {{ end }}
+

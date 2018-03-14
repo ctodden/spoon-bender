@@ -248,44 +248,47 @@ Generally, if $f'(x)$ is &ldquo;algebraic&rdquo; --- a rational function, square
 
 ## Exercises
 
+<br>
+
 {{% problem_environment %}}
 
-{{% prob %}}Evaluate the following indefinite integrals.
+{{% pwrap %}}
+{{% prob %}}Evaluate the following indefinite integrals.{{% /prob %}}
 {{% columns 2 %}}
 {{% part %}}$\displaystyle \int (5x+3)e^{2x} \, dx${{% /part %}}
 {{% part %}}$\displaystyle \int x^2 e^x \, dx${{% /part %}}
-{{% /columns%}}
+{{% /columns %}}
 {{% columns 2 %}}
 {{% part %}}$\displaystyle \int x\ln x \, dx${{% /part %}}
 {{% part %}}$\displaystyle \int \frac{\ln x}{x^2} \, dx${{% /part %}}
-{{% /columns%}}
+{{% /columns %}}
 {{% columns 2 %}}
 {{% part %}}$\displaystyle \int e^{-x}\sin (2x) \, dx${{% /part %}}
 {{% part %}}$\displaystyle \int x\sec^2 x \, dx${{% /part %}}
-{{% /columns%}}
-{{% /prob %}}
+{{% /columns %}}
+{{% /pwrap %}}
 
-{{% prob %}}Find the exact value of the following definite integrals.
+{{% pwrap %}}
+{{% prob %}}Find the exact value of the following definite integrals.{{% /prob %}}
 {{% columns 2 %}}
 {{% part %}}$\displaystyle \int_0^1 x \, e^x \, dx${{% /part %}}
 {{% part %}}$\displaystyle \int_0^{2\pi} x\sin\left(\tfrac x2\right)\, dx${{% /part %}}
 {{% /columns%}}
 {{% part %}}$\displaystyle \int_1^{e^2} x^4 \, \ln x \, dx${{% /part %}}
-{{% /prob %}}
+{{% /pwrap %}}
 
-{{% prob %}}Use integration by parts to evaluate the following.
+{{% pwrap %}}
+{{% prob %}}Use integration by parts to evaluate the following.{{% /prob %}}
 {{% columns 2 %}}
 {{% part %}}$\displaystyle \int \arctan x\, dx${{% /part %}}
 {{% part %}}$\displaystyle \int \arcsin x\, dx${{% /part %}}
 {{% /columns%}}
-{{% /prob %}}
+{{% /pwrap %}}
 
-
+{{% pwrap %}}
 {{% prob %}}Evaluate the following integral two different ways --- once using a straight substitution, then again using integration by parts: 
-$$\int \cos^2 x \sin x\, dx$$
-{{% /prob %}}
+$$\int \cos^2 x \sin x\, dx$${{% /prob %}}
 
-<section class="problem">
   <div class="line">
     <div class="problem_label"><span></span></div>
     <div class="short_part_label"><span></span></div>
@@ -299,15 +302,15 @@ $$\int \cos^2 x \sin x\, dx$$
     <div class="item_content">Use the reduction formula to <em><strong>quickly</strong></em> write out the values of $$\int x^n e^x\, dx$$ for $n=1$, $2$, $3$, $4$ and $5$.</div>
   </div>
 
-</section>
+{{% /pwrap %}}
 
-{{% prob %}}Suppose $f$ is a function for which $$f'(x) = \frac 1{\sqrt{1+x^2}}$$ Evaluate the following integrals.
-
+{{% pwrap %}}
+{{% prob %}}Suppose $f$ is a function for which $$f'(x) = \frac 1{\sqrt{1+x^2}}$$ Evaluate the following integrals.{{% /prob %}}
 {{% columns 2 %}}
 {{% part %}}$\displaystyle \int f(x)\, dx${{% /part %}}
 {{% part %}}$\displaystyle \int x^3 \cdot f(x)\, dx${{% /part %}}
 {{% /columns %}}
-{{% /prob %}}
+{{% /pwrap %}}
 
 {{% /problem_environment %}}
 
