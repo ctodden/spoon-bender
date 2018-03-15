@@ -1,6 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-pathtitle: "{{ .Name }}"
+rawtitle: "{{ .Name }}"
 date: {{ .Date }}
 draft: false
 ---
+
+
+
+

@@ -2,6 +2,7 @@
 title: "Integration by Parts"
 rawtitle: "integration-by-parts"
 date: 2018-03-10T10:06:25-05:00
+draft: false
 ---
 
 

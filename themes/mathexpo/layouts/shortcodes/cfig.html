@@ -1,7 +1,7 @@
 {{ if .IsNamedParams }}
 
 <div class="centering"><figure>
-<img src="{{.Get "src" }}" width="{{.Get "width" }}" alt="">
+<img src="/img/{{.Page.Params.rawtitle}}/{{.Get "src" }}" width="{{.Get "width" }}" alt="">
 <figcaption>{{.Get "caption" }}</figcaption>
 </figure></div>
 
