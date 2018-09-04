@@ -301,7 +301,19 @@ h1, h2, h3, h4 {
 }
 }
 
+/* Toggle-view constructions */
 
+label.preview_button {
+		font-family: 'Computer Modern Bright'; 
+}
+
+.toggle_content {
+	display: none;
+}
+
+input[type="checkbox"]:checked ~ .toggle_content {
+    display: block;
+}
 
 
 
