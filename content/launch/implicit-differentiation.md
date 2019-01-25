@@ -41,4 +41,4 @@ From Khan Academy. Run-time 10:17<br>
 
 <a href="https://drive.google.com/file/d/1NDkkzvEt5SyYcpTrX_kQT1k0FNemsJFq/view?usp=sharing">Exercises</a>
 
-<object data="http://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=1NDkkzvEt5SyYcpTrX_kQT1k0FNemsJFq&hl=en&embedded=true" width="612" height="792"></object>
+<object data="https://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=1NDkkzvEt5SyYcpTrX_kQT1k0FNemsJFq&hl=en&embedded=true" width="612" height="792"></object>
