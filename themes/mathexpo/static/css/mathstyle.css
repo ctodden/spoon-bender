@@ -223,6 +223,7 @@ div.buffer {
 	width: 8px;
 }
 
+
 /* Video wrappers */
 
 .video-container {
@@ -307,12 +308,12 @@ label.preview_button {
 		font-family: 'Computer Modern Bright'; 
 }
 
-.toggle_content {
-	display: none;
+div.toggle_content {
+  visibility: hidden;
 }
 
-input[type="checkbox"]:checked ~ .toggle_content {
-    display: block;
+input[type=checkbox]:checked ~ div.toggle_content {
+  visibility: visible;
 }
 
 
